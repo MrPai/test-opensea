@@ -12,32 +12,17 @@
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch"
   },
-  "resolutions": {
-    "@parallel-finance/api": "^1.6.5",
-    "@parallel-finance/types": "^1.6.5",
-    "@parallel-finance/type-definitions": "^1.6.5",
-    "@polkadot/api": "^7.15.1",
-    "@polkadot/types": "^7.15.1",
-    "@polkadot/rpc-core": "^7.15.1"
-  },
   "dependencies": {
     "@caporal/core": "^2.0.2",
-    "@parallel-finance/api": "^1.6.5",
-    "@parallel-finance/type-definitions": "^1.6.5",
-    "@parallel-finance/types": "^1.6.5",
-    "@polkadot/api": "^7.8.2-2",
-    "@polkadot/api-derive": "^7.8.2-2",
-    "@polkadot/keyring": "^8.4.1",
-    "@polkadot/util-crypto": "^8.4.1",
     "await-lock": "^2.1.0",
     "axios": "^0.26.1",
     "cheerio": "^1.0.0-rc.10",
     "inquirer": "^8.1.2",
     "lodash": "^4.17.21",
+    "opensea-js": "^4.0.3",
     "winston": "^3.3.3"
   },
   "devDependencies": {
-    "@polkadot/types": "^7.8.2-2",
     "@types/inquirer": "^8.2.0",
     "@types/jest": "^27.4.1",
     "@types/lodash": "^4.14.171",
