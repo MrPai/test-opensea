@@ -1,0 +1,68 @@
+{
+  "name": "stake-client",
+  "version": "2.0.0",
+  "description": "Parallel offchain stake client",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/main.ts",
+    "start:watch": "nodemon watch",
+    "format": "prettier --config .prettierrc.json 'src/**/*.ts' --write",
+    "lint": "eslint . --ext .ts --fix",
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch"
+  },
+  "resolutions": {
+    "@parallel-finance/api": "^1.6.5",
+    "@parallel-finance/types": "^1.6.5",
+    "@parallel-finance/type-definitions": "^1.6.5",
+    "@polkadot/api": "^7.15.1",
+    "@polkadot/types": "^7.15.1",
+    "@polkadot/rpc-core": "^7.15.1"
+  },
+  "dependencies": {
+    "@caporal/core": "^2.0.2",
+    "@parallel-finance/api": "^1.6.5",
+    "@parallel-finance/type-definitions": "^1.6.5",
+    "@parallel-finance/types": "^1.6.5",
+    "@polkadot/api": "^7.8.2-2",
+    "@polkadot/api-derive": "^7.8.2-2",
+    "@polkadot/keyring": "^8.4.1",
+    "@polkadot/util-crypto": "^8.4.1",
+    "await-lock": "^2.1.0",
+    "axios": "^0.26.1",
+    "cheerio": "^1.0.0-rc.10",
+    "inquirer": "^8.1.2",
+    "lodash": "^4.17.21",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@polkadot/types": "^7.8.2-2",
+    "@types/inquirer": "^8.2.0",
+    "@types/jest": "^27.4.1",
+    "@types/lodash": "^4.14.171",
+    "@types/node": "^17.0.21",
+    "@typescript-eslint/eslint-plugin": "5.12.1",
+    "@typescript-eslint/parser": "5.12.1",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.4",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.5.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parallel-finance/stake-client.git"
+  },
+  "keywords": [],
+  "author": "Parallel Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parallel-finance/stake-client/issues"
+  },
+  "homepage": "https://github.com/parallel-finance/stake-client#readme"
+}
