@@ -28,6 +28,13 @@ import { OpenSeaSDK, Network } from 'opensea-js'
 
         const accountAddress = "0x00B61eDb482beD076255a20CfB093f342677bDCf";
 
+        const balanceOfWETH = await openseaSDK.getTokenBalance({
+          accountAddress, // string
+          tokenAddress: "0xD9BA894E0097f8cC2BBc9D24D308b98e36dc6D02"// Compound USDT
+        })
+  
+        console.log(balanceOfWETH)
+
         // const asset = {
         //     tokenAddress: "0x06012c8cf97bead5deae237070f9587f8e7a266d", // CryptoKitties
         //     tokenId: "1", // Token ID
@@ -38,12 +45,7 @@ import { OpenSeaSDK, Network } from 'opensea-js'
         // asset, // Asset
         // })
 
-        const balanceOfWETH = await openseaSDK.getTokenBalance({
-            accountAddress, // string
-            tokenAddress: "0xD9BA894E0097f8cC2BBc9D24D308b98e36dc6D02"// Compound USDT
-          })
-    
-        console.log(balanceOfWETH);
+        
     
       })
   }

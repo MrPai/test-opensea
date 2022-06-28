@@ -7,6 +7,7 @@ program
   .discover(path.join(__dirname, 'commands'))
 
 program.run().catch((err) => {
+  console.log(err)
   process.exit(1)
 })
 
